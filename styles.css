@@ -18,7 +18,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px; /* Aumentei para melhorar a visualização */
+  overflow: auto; /* Adicionei para rolagem em caso de overflow */
 }
 
 h1 {
@@ -74,4 +75,18 @@ button:hover {
   100% {
     background-position: 100% 50%;
   }
+}
+
+/* Estilo para botão "Mostrar Mais" */
+#btn-mostrar-mais {
+  background-color: #004d40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#btn-mostrar-mais:hover {
+  background-color: #00796b;
 }

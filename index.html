@@ -21,6 +21,10 @@
         <input type="number" id="novo-saldo" placeholder="Novo Saldo">
         <button onclick="atualizarSaldoDiretamente()">Atualizar Saldo</button>
       </div>
+      <div id="nome-usuario" style="display:none;">
+        <input type="text" id="nome" placeholder="Seu Nome">
+        <button onclick="salvarNome()">Salvar Nome</button>
+      </div>
       <div class="transacao">
         <input type="number" id="valor" placeholder="Valor">
         <input type="text" id="motivo" placeholder="Motivo">
@@ -29,9 +33,9 @@
       </div>
       <h3>Histórico</h3>
       <ul id="historico"></ul>
+      <button id="btn-mostrar-mais" style="display:none;" onclick="mostrarMaisHistorico()">Mostrar Mais</button>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
-""
