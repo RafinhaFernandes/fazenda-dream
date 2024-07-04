@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #e0f7fa, #ffffff);
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  -webkit-animation: bg-pan-right 8s both;
+  animation: bg-pan-right 8s both;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #00796b;
+}
+
+h2, h3 {
+  color: #004d40;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #b2dfdb;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #00796b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.transacao {
+  margin-bottom: 20px;
+}
+
+/* Animista Animation */
+.bg-pan-right {
+  -webkit-animation: bg-pan-right 8s both;
+          animation: bg-pan-right 8s both;
+}
+
+@-webkit-keyframes bg-pan-right {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes bg-pan-right {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
