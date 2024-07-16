@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazenda Dream</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pan-right">
+  <div class="container">
+    <h1>Fazenda Dream</h1>
+    <div id="auth">
+      <h2>Autenticação</h2>
+      <input type="text" id="nome" placeholder="Nome de Usuário">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="autenticar()">Entrar</button>
+    </div>
+    <div id="dashboard" style="display:none;">
+      <h2>Razão da Fazenda</h2>
+      <p>Saldo Atual: R$ <span id="saldo">0.00</span></p>
+      <div id="edit-saldo" style="display:none;">
+        <input type="number" id="novo-saldo" placeholder="Novo Saldo">
+        <button onclick="atualizarSaldoDiretamente()">Atualizar Saldo</button>
+      </div>
+      <div id="nome-usuario" style="display:none;">
+        <input type="text" id="nome" placeholder="Seu Nome">
+        <button onclick="salvarNome()">Salvar Nome</button>
+      </div>
+      <div class="transacao">
+        <input type="number" id="valor" placeholder="Valor">
+        <input type="text" id="motivo" placeholder="Motivo">
+        <button onclick="depositar()">Depositar</button>
+        <button onclick="retirar()">Retirar</button>
+      </div>
+      <h3>Histórico</h3>
+      <ul id="historico"></ul>
+      <button id="btn-mostrar-mais" style="display:none;" onclick="mostrarMaisHistorico()">Mostrar Mais</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
